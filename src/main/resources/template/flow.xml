@@ -1,0 +1,14 @@
+<xml version="1.0" encoding="utf-8">
+    <flow>
+        <action id="action1" class="com.shuyun.loalty.recognize.TestAction1"/>
+        <action class="com.shuyun.loalty.recognize.TestAction2"/>
+        <condition class="com.shuyun.loalty.recognize.MobileCondition">
+            <onTrue>
+                <action class="com.shuyun.loalty.recognize.TestAction3"/>
+            </onTrue>
+            <onFalse>
+                <action class="com.shuyun.loalty.recognize.TestAction4"/>
+            </onFalse>
+        </condition>
+    </flow>
+</xml>
